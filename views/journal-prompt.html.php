@@ -1,7 +1,7 @@
 	<div class="uk-grid-margin uk-grid uk-grid-stack">
 	<div class="uk-width-1-2@m">
 		<div id="journalPrompt">
-			<p>Not sure what to write about? Use the button below to randomly select a writing prompt from a list of over 30 possibilities.</p>
+			<p>Not sure what to write about? Use the button below to randomly select a writing prompt from a list of over 30 possibilities.</p><!-- roadmap: turn this into a variable that can be set in the plugin admin -->
 			<div id="promptArea" class="uk-box-shadow-small uk-border-rounded">
 				<p class="promptPhrase">&nbsp;</p>
 			</div>
@@ -36,12 +36,14 @@
 			</div>
 		</div>
 		<div class="countdown_controls">
+			<!-- roadmap: ability to choose sound files in admin -->
 			<audio id="startSound" preload="preload">
 				<source src=<?php echo TAPINTU_JORUNAL_URL.'/media/sound-bowl-head-top-a3.m4a';?> type="audio/x-m4a" />
 				<source src=<?php echo TAPINTU_JORUNAL_URL.'/media/sound-bowl-head-top-a3.wav';?> type="audio/wav" />
 				<source src=<?php echo TAPINTU_JORUNAL_URL.'/media/sound-bowl-head-top-a3.mp3';?> type="audio/mpeg" />
 			</audio>
 			<!--<input type="button" value="30 Seconds" onclick="startTimer(0,30);">-->
+			<!-- roadmap: have ability to set different time options -- perhaps add an option to set one's own time in minutes -->
 			<button onclick="startTimer(2,0);" data-role="button" id="2min" class="uk-button uk-button-small">2 Minutes</button>
 			<button onclick="startTimer(5,0);" data-role="button" id="5min" class="uk-button uk-button-small">5 Minutes</button>
 			<button onclick="startTimer(10,0);" data-role="button" id="10min" class="uk-button uk-button-small">10 Minutes</button>

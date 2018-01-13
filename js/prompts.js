@@ -1,3 +1,4 @@
+// roadmap: change from hard-coded to a list created in admin so can add and sort as many phrases as desired
 var prompts = new Array();
 prompts[0] = 'Love is...';
 prompts[1] = 'I believe...';
